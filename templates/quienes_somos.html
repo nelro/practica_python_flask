@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - AviTech</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logotipo de AviTech">
+            <h1>AviTech</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('inicio') }}">Inicio</a></li>
+                <li><a href="{{ url_for('quienes_somos') }}">Quiénes Somos</a></li>
+                <li><a href="{{ url_for('servicios') }}">Servicios</a></li>
+                <li><a href="{{ url_for('noticias') }}">Noticias</a></li>
+                <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+              </ul>
+        </nav>
+    </header>
+
+    <section id="quienes-somos">
+        <h2>Sobre Nosotros</h2>
+        <p>AviTech nació con la visión de revolucionar la automatización industrial en la cría de aves ponedoras, optimizando los procesos con tecnología avanzada.</p>
+
+        <h3>Misión</h3>
+        <p>Proveer soluciones tecnológicas para incrementar la eficiencia en la cría de aves, promoviendo la automatización de procesos con un enfoque sostenible.</p>
+
+        <h3>Visión</h3>
+        <p>Ser la empresa líder en automatización de granjas avícolas, ayudando a nuestros clientes a maximizar su productividad.</p>
+
+        <div class="equipo">
+            <h3>Conoce a Nuestro Equipo</h3>
+            <div class="miembro">
+                <img src="equipo1.jpg" alt="Miembro del equipo">
+                <p>Nelson Rodrigo Mamani - CEO</p>
+            </div>
+            <div class="miembro">
+                <img src="equipo2.jpg" alt="Miembro del equipo">
+                <p>Leydy Mamani - CTO</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

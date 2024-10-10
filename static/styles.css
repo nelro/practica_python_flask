@@ -89,3 +89,83 @@ header nav ul li a:hover {
 .social a:hover {
     text-decoration: underline;
 }
+
+
+/* Section Quiénes Somos */
+#quienes-somos {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#quienes-somos h2, h3 {
+    color: #0b3d91;
+}
+
+#quienes-somos p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.equipo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.miembro {
+    text-align: center;
+}
+
+.miembro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.miembro p {
+    font-weight: bold;
+}
+
+
+/* Section Servicios */
+#servicios {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#servicios h2 {
+    color: #0b3d91;
+    margin-bottom: 40px;
+}
+
+.servicio {
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+.servicio img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.servicio h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.servicio p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.btn-leer-mas {
+    text-decoration: none;
+    color: #0b3d91;
+    font-weight: bold;
+}

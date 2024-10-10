@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - AviTech</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logotipo de AviTech">
+            <h1>AviTech</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('inicio') }}">Inicio</a></li>
+                <li><a href="{{ url_for('quienes_somos') }}">Quiénes Somos</a></li>
+                <li><a href="{{ url_for('servicios') }}">Servicios</a></li>
+                <li><a href="{{ url_for('noticias') }}">Noticias</a></li>
+                <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+              </ul>
+        </nav>
+    </header>
+
+    <section id="noticias">
+        <h2>Últimas Noticias</h2>
+        <div class="noticia">
+            <img src="noticia1.jpg" alt="Noticia 1">
+            <h3>Implementación de nuevas tecnologías</h3>
+            <p>AviTech introduce sistemas avanzados para monitorear la producción en granjas avícolas.</p>
+        </div>
+    </section>
+</body>
+</html>
