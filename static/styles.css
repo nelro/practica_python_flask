@@ -1,0 +1,91 @@
+/* estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #0581b3;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* seccion de Inicio */
+#inicio {
+    padding: 50px;
+    text-align: center;
+}
+
+.descripcion h2 {
+    font-size: 2em;
+    color: #0b3d91;
+}
+
+.descripcion p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0b3d91;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-cta:hover {
+    background-color: #072b67;
+}
+
+/* Testimonios */
+.testimonios {
+    margin: 50px 0;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.social a {
+    color: #0b3d91;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}
