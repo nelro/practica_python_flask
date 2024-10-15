@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logotipo de AviTech">
+            <img src="../static/image/logo.webp" alt="Logotipo de AviTech">
             <h1>AviTech</h1>
         </div>
         <nav>
@@ -23,13 +23,54 @@
         </nav>
     </header>
 
-    <section id="noticias">
-        <h2>Últimas Noticias</h2>
-        <div class="noticia">
-            <img src="noticia1.jpg" alt="Noticia 1">
-            <h3>Implementación de nuevas tecnologías</h3>
-            <p>AviTech introduce sistemas avanzados para monitorear la producción en granjas avícolas.</p>
+    <main>
+        <section id="noticias">
+            <div class="container">
+                <h2>Últimas Noticias</h2>
+                <p>Conoce las novedades más recientes sobre nuestra tecnología y proyectos en la cría automatizada de aves.</p>
+
+                <div class="noticias-grid">
+                    <div class="noticia">
+                        <img src="../static/image/imgNoticias/Innovación en Alimentación Automatizada.webp" alt="Noticia 1" class="noticia-img">
+                        <h3>Innovación en Alimentación Automatizada</h3>
+                        <p>En AviTech, hemos lanzado un nuevo sistema de alimentación automatizada que promete revolucionar la industria avícola, mejorando la eficiencia y reduciendo costos operativos.</p>
+                        <a href="https://dealdos.com/blog/industria-alimentaria/" class="btn-cta" target="_blank">Leer más</a>
+                    </div>
+
+                    <div class="noticia">
+                        <img src="../static/image/imgNoticias/Expansión Internacional.webp" alt="Noticia 2" class="noticia-img">
+                        <h3>Expansión Internacional</h3>
+                        <p>Nos complace anunciar que AviTech ha comenzado su expansión internacional. En los próximos meses, nuestra tecnología estará disponible en nuevos mercados, llevando innovación a granjas de todo el mundo.</p>
+                        <a href="https://catedralatam.com/anuncian-temas-de-cumbre-avicola-latinoamericana-2025/" class="btn-cta" target="_blank">Leer más</a>
+                    </div>
+
+                    <div class="noticia">
+                        <img src="../static/image/imgNoticias/Premio a la Innovación Tecnológica.webp" alt="Noticia 3" class="noticia-img">
+                        <h3>Premio a la Innovación Tecnológica</h3>
+                        <p>AviTech ha sido galardonada con el premio a la innovación tecnológica en la industria avícola, destacando nuestro compromiso con el desarrollo de soluciones automatizadas para la cría de aves.</p>
+                        <a href="https://www.veterinariadigital.com/articulos/automatizacion-y-precision-equipos-innovadores-para-optimizar-la-manipulacion-de-huevos-en-las-granjas-avicolas/" class="btn-cta" target="_blank">Leer más</a>
+                    </div>
+
+                    <div class="noticia">
+                        <img src="../static/image/imgNoticias/Nuevo Proyecto de Sostenibilidad.webp" alt="Noticia 4" class="noticia-img">
+                        <h3>Nuevo Proyecto de Sostenibilidad</h3>
+                        <p>Estamos implementando nuevas tecnologías de energía renovable para hacer nuestras operaciones aún más sostenibles. Este proyecto reducirá significativamente nuestra huella de carbono.</p>
+                        <a href="https://www.aseprhu.es/sostenibilidad-y-medioambiente/" class="btn-cta" target="_blank">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Botón para ir al contacto -->
+        <div class="cta-button">
+            <a href="{{ url_for('contacto') }}" class="btn-cta">Contáctanos</a>
         </div>
-    </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <h4>Síguenos en redes sociales</h4>
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">TikTok</a>
+        </div>
+    </footer>
 </body>
 </html>
