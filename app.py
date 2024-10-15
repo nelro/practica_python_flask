@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, url_for, redirect
 
 app = Flask(__name__)
 
@@ -22,6 +22,15 @@ def noticias():
 @app.route("/contacto")
 def contacto():
     return render_template("contacto.html")
+
+@app.route("/datosPostRecividos", methods=['POST'])
+def datosPostRecividos():
+   nombre = request.form.get('nombre')
+   email = request.form.get('email')
+   mensaje = request.form.get('mensaje')
+
+   # Devolver la plantilla renderizada
+   return render_template("datosPostRecividos.html", nombre=nombre, email=email, mensaje=mensaje)
 
 if __name__ == "__main__":
     app.run(debug=True)
